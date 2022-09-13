@@ -1,3 +1,7 @@
+# OVERVIEW
+
+I am using this to recreate my Pokemon 151 Project in Typescript.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
