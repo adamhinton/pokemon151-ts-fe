@@ -1,12 +1,14 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import "./App.css";
+import pokemonData from "./data";
 
-function App() {
+const App = (): ReactElement => {
+  console.log("pokemonData:", pokemonData);
   return (
     <div className="App">
       <h1>Adam Hinton</h1>
     </div>
   );
-}
+};
 
 export default App;
