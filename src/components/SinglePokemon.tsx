@@ -7,7 +7,8 @@ interface Props {
   isShiny: Boolean;
 }
 
-const SinglePokemon = <Props,>(props: Props): ReactElement => {
+const SinglePokemon = (props: Props): ReactElement => {
+  const { poke, isShiny } = props;
   return <div>SinglePokemon</div>;
 };
 
