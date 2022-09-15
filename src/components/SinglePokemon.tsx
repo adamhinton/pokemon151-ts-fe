@@ -7,6 +7,8 @@ interface Props {
   isShiny: Boolean;
 }
 
-const SinglePokemon = <Props,>(props: Props) => {
+const SinglePokemon = <Props,>(props: Props): Element => {
   return <div>SinglePokemon</div>;
 };
+
+export default SinglePokemon;
