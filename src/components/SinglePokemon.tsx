@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactElement } from "react";
 
 interface Props {
   // Not doing type definition for poke because that is typechecked elsewhere in the code - no need to repeat here
@@ -7,7 +7,7 @@ interface Props {
   isShiny: Boolean;
 }
 
-const SinglePokemon = <Props,>(props: Props): Element => {
+const SinglePokemon = <Props,>(props: Props): ReactElement => {
   return <div>SinglePokemon</div>;
 };
 
