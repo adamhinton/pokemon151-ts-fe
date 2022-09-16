@@ -4,7 +4,6 @@ import AllPokemon from "./components/AllPokemon";
 import pokemonData from "./data";
 
 const App = (): ReactElement => {
-  console.log("pokemonData:", pokemonData);
   return (
     <div className="App">
       <h1>Adam Hinton</h1>
