@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react";
 import "./App.css";
-import SinglePokemon from "./components/SinglePokemon";
+import AllPokemon from "./components/AllPokemon";
 import pokemonData from "./data";
 
 const App = (): ReactElement => {
@@ -8,7 +8,7 @@ const App = (): ReactElement => {
   return (
     <div className="App">
       <h1>Adam Hinton</h1>
-      <SinglePokemon poke={pokemonData[0]} isShiny={true} />
+      <AllPokemon isShiny={true} pokemonData={pokemonData} />
     </div>
   );
 };
