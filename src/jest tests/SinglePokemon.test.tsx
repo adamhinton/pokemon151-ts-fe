@@ -1,6 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import SinglePokemon from "../components/SinglePokemon";
 import pokemonData, { PokemonData } from "../data";
+import renderer from "react-test-renderer";
 
 jest.mock("../data", (): PokemonData => {
   return [
@@ -34,4 +35,14 @@ test("[2] Displays correct Pokemon info on screen", () => {
   expect(dexEntry).toBeVisible();
   expect(height).toBeVisible();
   expect(weight).toBeVisible();
+});
+
+test("[3] Matches snapshot from 9.16.22 --- this is before styling has been added", () => {
+  const component = renderer.create(
+    <SinglePokemon poke={pokemonData[0]} isShiny={true} />
+  );
+
+  let tree = component.toJSON();
+
+  expect(tree).toMatchSnapshot();
 });
