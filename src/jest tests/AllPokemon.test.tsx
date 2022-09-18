@@ -1,6 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import AllPokemon from "../components/AllPokemon";
 import pokemonData, { PokemonData } from "../data";
+import renderer from "react-test-renderer";
 
 jest.mock("../data", (): PokemonData => {
   return [
@@ -35,4 +36,16 @@ test("[2] All pokemon objects appear on screen", () => {
   const pokemonList = screen.getAllByTestId("pokemon-card");
 
   expect(pokemonList.length).toBe(2);
+});
+
+test("[3] Matches snapshot from 9.17.22", () => {
+  const component = renderer.create(
+    <AllPokemon pokemonData={pokemonData} isShiny={true} />
+  );
+
+  let tree = component.toJSON();
+
+  console.log("tree:", tree);
+
+  expect(tree).toMatchSnapshot();
 });
