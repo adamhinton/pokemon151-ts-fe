@@ -8,12 +8,20 @@ interface Props {
   isShiny: Boolean;
 }
 
+const PokemonCard = styled.article`
+  border: 1px solid black;
+  box-sizing: border-box;
+  width: 12rem;
+  margin: 2%;
+  background-color: #bef8f8;
+`;
+
 const SinglePokemon = (props: Props): ReactElement => {
   const { poke, isShiny } = props;
   const { name, type, dexEntry, height, weight, id, num } = poke;
 
   return (
-    <article className="pokemon-card" data-testid="pokemon-card">
+    <PokemonCard data-testid="pokemon-card">
       <h2 className="poke-name card-item">
         {name} <span className="dex-id">#{id}</span>
       </h2>
@@ -53,7 +61,7 @@ const SinglePokemon = (props: Props): ReactElement => {
       </figure>
 
       <blockquote className="card-item">{dexEntry}</blockquote>
-    </article>
+    </PokemonCard>
   );
 };
 
