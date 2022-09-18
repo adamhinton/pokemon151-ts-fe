@@ -22,7 +22,6 @@ const PokeID = styled.span`
 
 const PokeImageContainer = styled.figure`
   height: 171px;
-  width: 171px;
   display: flex;
   align-items: center;
   justify-content: center;
