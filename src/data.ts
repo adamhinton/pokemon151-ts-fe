@@ -1,4 +1,4 @@
-type Pokemon = {
+export type Pokemon = {
   id: number;
   num: string;
   name: string;
@@ -8,9 +8,9 @@ type Pokemon = {
   dexEntry: string;
 };
 
-type PokemonData = Pokemon[];
+export type PokemonData = Pokemon[];
 
-const pokemonData: PokemonData = [
+export const pokemonData: PokemonData = [
   {
     id: 1,
     num: "001",

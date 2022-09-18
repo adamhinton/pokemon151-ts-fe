@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[3] Matches snapshot from 9.17.22 1`] = `
+<main
+  className="all-pokemon"
+>
+  <div
+    data-testid="pokemon-test"
+  >
+    This is a mocked SinglePokemon Component
+  </div>
+  <div
+    data-testid="pokemon-test"
+  >
+    This is a mocked SinglePokemon Component
+  </div>
+</main>
+`;
