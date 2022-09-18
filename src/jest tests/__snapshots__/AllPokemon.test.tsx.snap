@@ -4,105 +4,15 @@ exports[`[3] Matches snapshot from 9.17.22 1`] = `
 <main
   className="all-pokemon"
 >
-  <article
-    className="pokemon-card"
-    data-testid="pokemon-card"
+  <div
+    data-testid="pokemon-test"
   >
-    <h2
-      className="poke-name card-item"
-    >
-      Testname123
-       
-      <span
-        className="dex-id"
-      >
-        #
-        1
-      </span>
-    </h2>
-    <h3
-      className="poke-type card-item"
-    >
-      TestType1
-       / 
-      TestType2
-       
-    </h3>
-    <h4
-      className="height-weight card-item"
-    >
-      Height: 
-      0.0001m
-       
-      <br />
-      Weight: 
-      0.0001kg
-    </h4>
-    <figure
-      className="img-container card-item"
-    >
-      <img
-        alt="Testname123"
-        className="poke-img"
-        data-testid="shiny"
-        src="https://www.serebii.net/Shiny/SWSH/001.png"
-      />
-    </figure>
-    <blockquote
-      className="card-item"
-    >
-      This is a test dex entry
-    </blockquote>
-  </article>
-  <article
-    className="pokemon-card"
-    data-testid="pokemon-card"
+    This is a mocked SinglePokemon Component
+  </div>
+  <div
+    data-testid="pokemon-test"
   >
-    <h2
-      className="poke-name card-item"
-    >
-      Testname2
-       
-      <span
-        className="dex-id"
-      >
-        #
-        2
-      </span>
-    </h2>
-    <h3
-      className="poke-type card-item"
-    >
-      TestType2
-       / 
-      TestType3
-       
-    </h3>
-    <h4
-      className="height-weight card-item"
-    >
-      Height: 
-      0.0001m
-       
-      <br />
-      Weight: 
-      0.0001kg
-    </h4>
-    <figure
-      className="img-container card-item"
-    >
-      <img
-        alt="Testname2"
-        className="poke-img"
-        data-testid="shiny"
-        src="https://www.serebii.net/Shiny/SWSH/002.png"
-      />
-    </figure>
-    <blockquote
-      className="card-item"
-    >
-      This is a test dex entry
-    </blockquote>
-  </article>
+    This is a mocked SinglePokemon Component
+  </div>
 </main>
 `;
