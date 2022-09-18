@@ -11,7 +11,7 @@ exports[`[3] Matches snapshot from 9.16.22 --- this is before styling has been a
     Testname123
      
     <span
-      className="dex-id"
+      className="sc-gsnTZi fpDjnk"
     >
       #
       1
@@ -36,11 +36,11 @@ exports[`[3] Matches snapshot from 9.16.22 --- this is before styling has been a
     0.0001kg
   </h4>
   <figure
-    className="img-container card-item"
+    className="sc-dkzDqf cZqOBi img-container card-item"
   >
     <img
       alt="Testname123"
-      className="poke-img"
+      className="sc-hKMtZM hXoByT poke-img"
       data-testid="shiny"
       src="https://www.serebii.net/Shiny/SWSH/001.png"
     />

@@ -15,6 +15,10 @@ body {
   --button-text: #000;
   --button-bg: #fff;
 }
+
+.card-item{
+    margin: 3%;
+}
 `;
 
 export default GlobalStyle;

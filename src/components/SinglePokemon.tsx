@@ -20,6 +20,18 @@ const PokeID = styled.span`
   font-size: 70%;
 `;
 
+const PokeImageContainer = styled.figure`
+  height: 171px;
+  width: 171px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const PokeImage = styled.img`
+  width: 90%;
+`;
+
 const SinglePokemon = (props: Props): ReactElement => {
   const { poke, isShiny } = props;
   const { name, type, dexEntry, height, weight, id, num } = poke;
@@ -46,24 +58,24 @@ const SinglePokemon = (props: Props): ReactElement => {
       </h4>
 
       {/* image of each pokemon */}
-      <figure className="img-container card-item">
+      <PokeImageContainer className="img-container card-item">
         {/* Displays either the shiny or normal form of the pokemon based on user preference */}
         {isShiny ? (
-          <img
+          <PokeImage
             className="poke-img"
             data-testid="shiny"
             src={`https://www.serebii.net/Shiny/SWSH/${num}.png`}
             alt={name}
           />
         ) : (
-          <img
+          <PokeImage
             className="poke-img"
             data-testid="not-shiny"
             src={`https://www.serebii.net/swordshield/pokemon/${num}.png`}
             alt={name}
           />
         )}
-      </figure>
+      </PokeImageContainer>
 
       <blockquote className="card-item">{dexEntry}</blockquote>
     </PokemonCard>
