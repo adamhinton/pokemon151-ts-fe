@@ -13,14 +13,7 @@ const AllPokemon = (props: Props): ReactElement => {
   return (
     <main className="all-pokemon">
       {pokemonData.map((poke) => {
-        return (
-          <SinglePokemon
-            poke={poke}
-            key={poke.name}
-            data-testid="single-pokemon"
-            isShiny={isShiny}
-          />
-        );
+        return <SinglePokemon poke={poke} key={poke.name} isShiny={isShiny} />;
       })}
     </main>
   );
