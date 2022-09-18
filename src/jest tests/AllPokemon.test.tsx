@@ -2,6 +2,7 @@ import { render, screen } from "@testing-library/react";
 import AllPokemon from "../components/AllPokemon";
 import pokemonData from "../data";
 import renderer from "react-test-renderer";
+import SinglePokemon from "../components/SinglePokemon";
 
 jest.mock("../components/SinglePokemon", () => () => {
   return (
@@ -12,7 +13,7 @@ jest.mock("../components/SinglePokemon", () => () => {
 });
 
 jest.mock("../data", () => {
-  return [{ name: "Test123" }, { name: "Test345" }];
+  return [{ name: "Test123" }, { name: "Test345" }, { name: "Test697" }];
 });
 
 test("[1] Renders without errors", () => {
@@ -26,7 +27,7 @@ test("[2] All pokemon objects appear on screen", () => {
     "This is a mocked SinglePokemon Component"
   );
 
-  expect(pokemonList.length).toBe(2);
+  expect(pokemonList.length).toBe(3);
 });
 
 test("[3] Matches snapshot from 9.17.22", () => {

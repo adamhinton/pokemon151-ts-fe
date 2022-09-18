@@ -14,5 +14,10 @@ exports[`[3] Matches snapshot from 9.17.22 1`] = `
   >
     This is a mocked SinglePokemon Component
   </div>
+  <div
+    data-testid="pokemon-test"
+  >
+    This is a mocked SinglePokemon Component
+  </div>
 </main>
 `;
