@@ -12,3 +12,12 @@ jest.mock("../components/AllPokemon", () => () => {
 test("[1] Renders without errors", () => {
   render(<App />);
 });
+
+test("[2] Renders child components", () => {
+  render(<App />);
+
+  const mockedAllPokemonComponent = screen.getByText(
+    "This is a mocked AllPokemon Component"
+  );
+  expect(mockedAllPokemonComponent).toBeVisible();
+});
