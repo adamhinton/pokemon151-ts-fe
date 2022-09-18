@@ -2,14 +2,9 @@ import { render, screen } from "@testing-library/react";
 import AllPokemon from "../components/AllPokemon";
 import pokemonData from "../data";
 import renderer from "react-test-renderer";
-import SinglePokemon from "../components/SinglePokemon";
 
 jest.mock("../components/SinglePokemon", () => () => {
-  return (
-    <div data-testid="pokemon-test">
-      This is a mocked SinglePokemon Component
-    </div>
-  );
+  return <div>This is a mocked SinglePokemon Component</div>;
 });
 
 jest.mock("../data", () => {
@@ -30,7 +25,19 @@ test("[2] All pokemon objects appear on screen", () => {
   expect(pokemonList.length).toBe(3);
 });
 
-test("[3] Matches snapshot from 9.17.22", () => {
+test("[3] Rerenders when passed new props", () => {
+  const { rerender } = render(<AllPokemon pokemonData={[]} isShiny={true} />);
+
+  rerender(<AllPokemon pokemonData={pokemonData} isShiny={true} />);
+
+  const pokemonItem = screen.getAllByText(
+    "This is a mocked SinglePokemon Component"
+  )[0];
+
+  expect(pokemonItem).toBeVisible();
+});
+
+test("[4] Matches snapshot from 9.17.22", () => {
   const component = renderer.create(
     <AllPokemon pokemonData={pokemonData} isShiny={true} />
   );
