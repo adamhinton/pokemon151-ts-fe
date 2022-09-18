@@ -16,14 +16,19 @@ const PokemonCard = styled.article`
   background-color: #bef8f8;
 `;
 
+const PokeID = styled.span`
+  font-size: 70%;
+`;
+
 const SinglePokemon = (props: Props): ReactElement => {
   const { poke, isShiny } = props;
   const { name, type, dexEntry, height, weight, id, num } = poke;
 
   return (
     <PokemonCard data-testid="pokemon-card">
+      {/* Not sure there's actually any styling for poke-name */}
       <h2 className="poke-name card-item">
-        {name} <span className="dex-id">#{id}</span>
+        {name} <PokeID>#{id}</PokeID>
       </h2>
 
       {/* Pokemon's type info */}
