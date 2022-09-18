@@ -26,6 +26,8 @@ const CardItem = styled.div`
 
 const PokeImageContainer = styled(CardItem)`
   height: 171px;
+  width: 171px;
+  margin: 3%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,26 +43,26 @@ const SinglePokemon = (props: Props): ReactElement => {
 
   return (
     <PokemonCard data-testid="pokemon-card">
-      <CardItem as="h2" className="poke-name card-item">
+      <CardItem as="h2">
         {name} <PokeID>#{id}</PokeID>
       </CardItem>
 
       {/* Pokemon's type info */}
       {type[1] ? (
-        <CardItem as="h3" className="card-item">
+        <CardItem as="h3">
           {type[0]} / {type[1]}{" "}
         </CardItem>
       ) : (
-        <h3 className="card-item">{type}</h3>
+        <h3>{type}</h3>
       )}
 
-      <CardItem as="h4" className="card-item">
+      <CardItem as="h4">
         Height: {height} <br />
         Weight: {weight}
       </CardItem>
 
       {/* image of each pokemon */}
-      <PokeImageContainer as="figure" className="card-item">
+      <PokeImageContainer as="figure">
         {/* Displays either the shiny or normal form of the pokemon based on user preference */}
         {isShiny ? (
           <PokeImage
@@ -77,9 +79,7 @@ const SinglePokemon = (props: Props): ReactElement => {
         )}
       </PokeImageContainer>
 
-      <CardItem as="blockquote" className="card-item">
-        {dexEntry}
-      </CardItem>
+      <CardItem as="blockquote">{dexEntry}</CardItem>
     </PokemonCard>
   );
 };

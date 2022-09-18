@@ -6,7 +6,7 @@ exports[`[3] Matches snapshot from 9.16.22 --- this is before styling has been a
   data-testid="pokemon-card"
 >
   <h2
-    className="poke-name card-item"
+    className="sc-dkzDqf eDSOFi poke-name card-item"
   >
     Testname123
      
@@ -18,7 +18,7 @@ exports[`[3] Matches snapshot from 9.16.22 --- this is before styling has been a
     </span>
   </h2>
   <h3
-    className="card-item"
+    className="sc-dkzDqf eDSOFi card-item"
   >
     TestType1
      / 
@@ -26,7 +26,7 @@ exports[`[3] Matches snapshot from 9.16.22 --- this is before styling has been a
      
   </h3>
   <h4
-    className="card-item"
+    className="sc-dkzDqf eDSOFi card-item"
   >
     Height: 
     0.0001m
@@ -36,17 +36,17 @@ exports[`[3] Matches snapshot from 9.16.22 --- this is before styling has been a
     0.0001kg
   </h4>
   <figure
-    className="sc-dkzDqf cslUbc card-item"
+    className="sc-dkzDqf sc-hKMtZM eDSOFi gVYrgK card-item"
   >
     <img
       alt="Testname123"
-      className="sc-hKMtZM hXoByT"
+      className="sc-eCYdqJ jKzle"
       data-testid="shiny"
       src="https://www.serebii.net/Shiny/SWSH/001.png"
     />
   </figure>
   <blockquote
-    className="card-item"
+    className="sc-dkzDqf eDSOFi card-item"
   >
     This is a test dex entry
   </blockquote>
