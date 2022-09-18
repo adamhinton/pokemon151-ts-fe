@@ -1,5 +1,6 @@
 import React, { ReactElement } from "react";
 import { Pokemon } from "../data";
+import styled from "styled-components";
 
 interface Props {
   poke: Pokemon;
