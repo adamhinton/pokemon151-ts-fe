@@ -26,7 +26,7 @@ exports[`[3] Matches snapshot from 9.16.22 --- this is before styling has been a
      
   </h3>
   <h4
-    className="height-weight card-item"
+    className="card-item"
   >
     Height: 
     0.0001m
