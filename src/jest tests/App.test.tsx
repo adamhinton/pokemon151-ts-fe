@@ -1,5 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import App from "../App";
+import renderer from "react-test-renderer";
 
 jest.mock("../components/AllPokemon", () => () => {
   return (
@@ -20,4 +21,12 @@ test("[2] Renders child components", () => {
     "This is a mocked AllPokemon Component"
   );
   expect(mockedAllPokemonComponent).toBeVisible();
+});
+
+test("[3] Matches snapshot from 9.18.22", () => {
+  const component = renderer.create(<App />);
+
+  let tree = component.toJSON();
+
+  expect(tree).toMatchSnapshot();
 });
