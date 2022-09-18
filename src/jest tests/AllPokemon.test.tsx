@@ -3,6 +3,14 @@ import AllPokemon from "../components/AllPokemon";
 import pokemonData, { PokemonData } from "../data";
 import renderer from "react-test-renderer";
 
+jest.mock("../components/SinglePokemon", () => () => {
+  return (
+    <div data-testid="pokemon-test">
+      This is a mocked SinglePokemon Component
+    </div>
+  );
+});
+
 jest.mock("../data", (): PokemonData => {
   return [
     {
@@ -33,12 +41,12 @@ test("[1] Renders without errors", () => {
 test("[2] All pokemon objects appear on screen", () => {
   render(<AllPokemon pokemonData={pokemonData} isShiny={true} />);
 
-  const pokemonList = screen.getAllByTestId("pokemon-card");
+  const pokemonList = screen.getAllByTestId("pokemon-test");
 
   expect(pokemonList.length).toBe(2);
 });
 
-test("[3] Matches snapshot from 9.17.22", () => {
+test.only("[3] Matches snapshot from 9.17.22", () => {
   const component = renderer.create(
     <AllPokemon pokemonData={pokemonData} isShiny={true} />
   );
