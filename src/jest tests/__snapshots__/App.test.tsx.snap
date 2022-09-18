@@ -7,9 +7,7 @@ exports[`[3] Matches snapshot from 9.18.22 1`] = `
   <h1>
     Adam Hinton
   </h1>
-  <div
-    data-testid="All-pokemon-test"
-  >
+  <div>
     This is a mocked AllPokemon Component
   </div>
 </div>
