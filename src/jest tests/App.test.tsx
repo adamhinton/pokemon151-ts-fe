@@ -3,11 +3,7 @@ import App from "../App";
 import renderer from "react-test-renderer";
 
 jest.mock("../components/AllPokemon", () => () => {
-  return (
-    <div data-testid="All-pokemon-test">
-      This is a mocked AllPokemon Component
-    </div>
-  );
+  return <div>This is a mocked AllPokemon Component</div>;
 });
 
 test("[1] Renders without errors", () => {

@@ -4,11 +4,7 @@ import pokemonData from "../data";
 import renderer from "react-test-renderer";
 
 jest.mock("../components/SinglePokemon", () => () => {
-  return (
-    <div data-testid="pokemon-test">
-      This is a mocked SinglePokemon Component
-    </div>
-  );
+  return <div>This is a mocked SinglePokemon Component</div>;
 });
 
 jest.mock("../data", () => {
