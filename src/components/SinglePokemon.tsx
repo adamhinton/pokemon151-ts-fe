@@ -37,38 +37,35 @@ const SinglePokemon = (props: Props): ReactElement => {
 
   return (
     <PokemonCard data-testid="pokemon-card">
-      {/* Not sure there's actually any styling for poke-name */}
       <h2 className="poke-name card-item">
         {name} <PokeID>#{id}</PokeID>
       </h2>
 
       {/* Pokemon's type info */}
       {type[1] ? (
-        <h3 className="poke-type card-item">
+        <h3 className="card-item">
           {type[0]} / {type[1]}{" "}
         </h3>
       ) : (
-        <h3 className="poke-type card-item">{type}</h3>
+        <h3 className="card-item">{type}</h3>
       )}
 
-      <h4 className="height-weight card-item">
+      <h4 className="card-item">
         Height: {height} <br />
         Weight: {weight}
       </h4>
 
       {/* image of each pokemon */}
-      <PokeImageContainer className="img-container card-item">
+      <PokeImageContainer className="card-item">
         {/* Displays either the shiny or normal form of the pokemon based on user preference */}
         {isShiny ? (
           <PokeImage
-            className="poke-img"
             data-testid="shiny"
             src={`https://www.serebii.net/Shiny/SWSH/${num}.png`}
             alt={name}
           />
         ) : (
           <PokeImage
-            className="poke-img"
             data-testid="not-shiny"
             src={`https://www.serebii.net/swordshield/pokemon/${num}.png`}
             alt={name}
