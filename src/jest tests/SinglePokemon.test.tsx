@@ -44,7 +44,5 @@ test("[3] Matches snapshot from 9.16.22 --- this is before styling has been adde
 
   let tree = component.toJSON();
 
-  console.log("tree:", tree);
-
   expect(tree).toMatchSnapshot();
 });

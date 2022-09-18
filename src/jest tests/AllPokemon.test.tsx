@@ -45,7 +45,5 @@ test("[3] Matches snapshot from 9.17.22", () => {
 
   let tree = component.toJSON();
 
-  console.log("tree:", tree);
-
   expect(tree).toMatchSnapshot();
 });
