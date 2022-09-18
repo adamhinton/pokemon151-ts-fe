@@ -2,7 +2,7 @@
 
 exports[`[3] Matches snapshot from 9.16.22 --- this is before styling has been added 1`] = `
 <article
-  className="pokemon-card"
+  className="sc-bczRLJ qcpOQ"
   data-testid="pokemon-card"
 >
   <h2
