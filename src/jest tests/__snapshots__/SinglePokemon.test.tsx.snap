@@ -6,7 +6,11 @@ exports[`[3] Matches snapshot from 9.16.22 --- this is before styling has been a
   data-testid="pokemon-card"
 >
   <h2
+<<<<<<< HEAD
     className="sc-dkzDqf eDSOFi"
+=======
+    className="sc-dkzDqf eDSOFi poke-name card-item"
+>>>>>>> a23cd467e66235133227f926fe66b4d0d032d165
   >
     Testname123
      
@@ -18,7 +22,11 @@ exports[`[3] Matches snapshot from 9.16.22 --- this is before styling has been a
     </span>
   </h2>
   <h3
+<<<<<<< HEAD
     className="sc-dkzDqf eDSOFi"
+=======
+    className="sc-dkzDqf eDSOFi card-item"
+>>>>>>> a23cd467e66235133227f926fe66b4d0d032d165
   >
     TestType1
      / 
@@ -26,7 +34,11 @@ exports[`[3] Matches snapshot from 9.16.22 --- this is before styling has been a
      
   </h3>
   <h4
+<<<<<<< HEAD
     className="sc-dkzDqf eDSOFi"
+=======
+    className="sc-dkzDqf eDSOFi card-item"
+>>>>>>> a23cd467e66235133227f926fe66b4d0d032d165
   >
     Height: 
     0.0001m
@@ -36,7 +48,11 @@ exports[`[3] Matches snapshot from 9.16.22 --- this is before styling has been a
     0.0001kg
   </h4>
   <figure
+<<<<<<< HEAD
     className="sc-dkzDqf sc-hKMtZM eDSOFi gVYrgK"
+=======
+    className="sc-dkzDqf sc-hKMtZM eDSOFi gVYrgK card-item"
+>>>>>>> a23cd467e66235133227f926fe66b4d0d032d165
   >
     <img
       alt="Testname123"
@@ -46,7 +62,11 @@ exports[`[3] Matches snapshot from 9.16.22 --- this is before styling has been a
     />
   </figure>
   <blockquote
+<<<<<<< HEAD
     className="sc-dkzDqf eDSOFi"
+=======
+    className="sc-dkzDqf eDSOFi card-item"
+>>>>>>> a23cd467e66235133227f926fe66b4d0d032d165
   >
     This is a test dex entry
   </blockquote>
