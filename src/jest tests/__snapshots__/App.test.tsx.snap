@@ -4,9 +4,39 @@ exports[`[3] Matches snapshot from 9.18.22 1`] = `
 <div
   className="App"
 >
-  <div>
-    Header
-  </div>
+  <header>
+    <h1
+      className="header-item header-h1"
+    >
+      Pokemon 151 Project
+    </h1>
+    <section
+      className="darkmode-shiny-dropdown"
+    >
+      <menu
+        className="darkmode-shiny-section"
+      >
+        <div
+          className="darkmode-section"
+        >
+          <div
+            className="logo"
+            data-testid="logo"
+          />
+        </div>
+        <div
+          className="vertical-line"
+        />
+      </menu>
+    </section>
+    <section
+      className="adam-info header-item"
+    >
+      <h2>
+        Author: Adam Hinton
+      </h2>
+    </section>
+  </header>
   <h1>
     Adam Hinton
   </h1>
