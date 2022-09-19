@@ -9,7 +9,8 @@ const App = (): ReactElement => {
   return (
     <div className="App">
       <GlobalStyle />
-      <Header />
+      {/* TODO: fix the shiny stuff */}
+      <Header isShiny={true} setIsShiny={() => true} />
       <h1>Adam Hinton</h1>
       <AllPokemon isShiny={true} pokemonData={pokemonData} />
     </div>

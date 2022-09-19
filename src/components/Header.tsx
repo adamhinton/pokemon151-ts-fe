@@ -8,10 +8,15 @@ import { BsMoon, BsSun } from "react-icons/bs";
 // - linksArray
 // - linkMaker
 
-interface Props {}
+interface Props {
+  isShiny: boolean;
+  setIsShiny: () => any;
+}
 
 const Header = (props: Props) => {
   //   const { changeDisplay, isShiny, setIsShiny } = props;
+  const { isShiny } = props;
+
   return (
     <header>
       <h1 className="header-item header-h1">Pokemon 151 Project</h1>
@@ -42,7 +47,7 @@ const Header = (props: Props) => {
           <div className="vertical-line" />
 
           {/* This button toggles whether the app shows the Shiny forms of the pokemon */}
-          {/* <div className="shiny-button-div">
+          <div className="shiny-button-div">
             <button
               className="shiny-button"
               onClick={() => {
@@ -51,7 +56,7 @@ const Header = (props: Props) => {
             >
               {isShiny ? "Show Non-Shiny Forms" : "Show Shiny Forms"}
             </button>
-          </div> */}
+          </div>
         </menu>
 
         {/* The dropdown section lives here */}
