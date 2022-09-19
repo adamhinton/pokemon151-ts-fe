@@ -1,5 +1,6 @@
 import React, { ReactElement } from "react";
 import { Pokemon } from "../data";
+import styled from "styled-components";
 
 interface Props {
   poke: Pokemon;
@@ -7,52 +8,79 @@ interface Props {
   isShiny: Boolean;
 }
 
+const PokemonCard = styled.article`
+  border: 1px solid black;
+  box-sizing: border-box;
+  width: 12rem;
+  margin: 2%;
+  background-color: #bef8f8;
+`;
+
+const PokeID = styled.span`
+  font-size: 70%;
+`;
+
+const CardItem = styled.div`
+  margin: 3%;
+`;
+
+const PokeImageContainer = styled(CardItem)`
+  height: 171px;
+  width: 171px;
+  margin: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const PokeImage = styled.img`
+  width: 90%;
+`;
+
 const SinglePokemon = (props: Props): ReactElement => {
   const { poke, isShiny } = props;
   const { name, type, dexEntry, height, weight, id, num } = poke;
 
   return (
-    <article className="pokemon-card" data-testid="pokemon-card">
-      <h2 className="poke-name card-item">
-        {name} <span className="dex-id">#{id}</span>
-      </h2>
+    <PokemonCard data-testid="pokemon-card">
+      <CardItem as="h2">
+        {name} <PokeID>#{id}</PokeID>
+      </CardItem>
 
       {/* Pokemon's type info */}
       {type[1] ? (
-        <h3 className="poke-type card-item">
+        <CardItem as="h3">
           {type[0]} / {type[1]}{" "}
-        </h3>
+        </CardItem>
       ) : (
-        <h3 className="poke-type card-item">{type}</h3>
+        <h3>{type}</h3>
       )}
 
-      <h4 className="height-weight card-item">
+      <CardItem as="h4">
         Height: {height} <br />
         Weight: {weight}
-      </h4>
+      </CardItem>
 
       {/* image of each pokemon */}
-      <figure className="img-container card-item">
+      <PokeImageContainer as="figure">
         {/* Displays either the shiny or normal form of the pokemon based on user preference */}
         {isShiny ? (
-          <img
-            className="poke-img"
+          <PokeImage
             data-testid="shiny"
             src={`https://www.serebii.net/Shiny/SWSH/${num}.png`}
             alt={name}
           />
         ) : (
-          <img
-            className="poke-img"
+          <PokeImage
             data-testid="not-shiny"
             src={`https://www.serebii.net/swordshield/pokemon/${num}.png`}
             alt={name}
           />
         )}
-      </figure>
+      </PokeImageContainer>
 
-      <blockquote className="card-item">{dexEntry}</blockquote>
-    </article>
+      <CardItem as="blockquote">{dexEntry}</CardItem>
+    </PokemonCard>
   );
 };
 

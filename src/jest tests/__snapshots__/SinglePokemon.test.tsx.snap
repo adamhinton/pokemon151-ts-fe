@@ -2,23 +2,23 @@
 
 exports[`[3] Matches snapshot from 9.16.22 --- this is before styling has been added 1`] = `
 <article
-  className="pokemon-card"
+  className="sc-bczRLJ qcpOQ"
   data-testid="pokemon-card"
 >
   <h2
-    className="poke-name card-item"
+    className="sc-dkzDqf eDSOFi"
   >
     Testname123
      
     <span
-      className="dex-id"
+      className="sc-gsnTZi fpDjnk"
     >
       #
       1
     </span>
   </h2>
   <h3
-    className="poke-type card-item"
+    className="sc-dkzDqf eDSOFi"
   >
     TestType1
      / 
@@ -26,7 +26,7 @@ exports[`[3] Matches snapshot from 9.16.22 --- this is before styling has been a
      
   </h3>
   <h4
-    className="height-weight card-item"
+    className="sc-dkzDqf eDSOFi"
   >
     Height: 
     0.0001m
@@ -36,17 +36,17 @@ exports[`[3] Matches snapshot from 9.16.22 --- this is before styling has been a
     0.0001kg
   </h4>
   <figure
-    className="img-container card-item"
+    className="sc-dkzDqf sc-hKMtZM eDSOFi gVYrgK"
   >
     <img
       alt="Testname123"
-      className="poke-img"
+      className="sc-eCYdqJ jKzle"
       data-testid="shiny"
       src="https://www.serebii.net/Shiny/SWSH/001.png"
     />
   </figure>
   <blockquote
-    className="card-item"
+    className="sc-dkzDqf eDSOFi"
   >
     This is a test dex entry
   </blockquote>
