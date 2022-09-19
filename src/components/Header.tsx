@@ -11,7 +11,7 @@ import { BsMoon, BsSun } from "react-icons/bs";
 interface Props {
   isShiny: boolean;
   // not sure how to classify this function
-  setIsShiny: unknown;
+  setIsShiny: Function;
 }
 
 const Header = (props: Props) => {
@@ -52,7 +52,7 @@ const Header = (props: Props) => {
             <button
               className="shiny-button"
               onClick={() => {
-                // setIsShiny(!isShiny);
+                setIsShiny(!isShiny);
               }}
             >
               {isShiny ? "Show Non-Shiny Forms" : "Show Shiny Forms"}
