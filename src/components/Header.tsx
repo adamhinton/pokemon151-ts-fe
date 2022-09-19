@@ -10,7 +10,8 @@ import { BsMoon, BsSun } from "react-icons/bs";
 
 interface Props {
   isShiny: boolean;
-  setIsShiny: () => any;
+  // not sure how to classify this function
+  setIsShiny: unknown;
 }
 
 const Header = (props: Props) => {

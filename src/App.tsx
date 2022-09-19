@@ -12,9 +12,9 @@ const App = (): ReactElement => {
     <div className="App">
       <GlobalStyle />
       {/* TODO: fix the shiny stuff */}
-      <Header isShiny={true} setIsShiny={() => true} />
+      <Header isShiny={isShiny} setIsShiny={setIsShiny} />
       <h1>Adam Hinton</h1>
-      <AllPokemon isShiny={isShiny} setIsShiny={setIsShiny} />
+      <AllPokemon pokemonData={pokemonData} isShiny={isShiny} />
     </div>
   );
 };
