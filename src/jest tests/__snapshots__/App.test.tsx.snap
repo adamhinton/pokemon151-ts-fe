@@ -4,6 +4,9 @@ exports[`[3] Matches snapshot from 9.18.22 1`] = `
 <div
   className="App"
 >
+  <div>
+    Header
+  </div>
   <h1>
     Adam Hinton
   </h1>
