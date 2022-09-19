@@ -15,7 +15,7 @@ interface Props {
 
 const Header = (props: Props) => {
   //   const { changeDisplay, isShiny, setIsShiny } = props;
-  const { isShiny } = props;
+  const { isShiny, setIsShiny } = props;
 
   return (
     <header>
