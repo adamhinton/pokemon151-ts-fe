@@ -1,6 +1,7 @@
 import React from "react";
 //darkmode toggle icons
 import { BsMoon, BsSun } from "react-icons/bs";
+import useDarkMode from "../hooks/useDarkMode";
 
 // TODO:
 // - Dropdown
@@ -19,8 +20,7 @@ const Header = (props: Props) => {
   const { isShiny, setIsShiny } = props;
 
   // this is dummy data and we'll make this smart a bit later
-  let isDarkMode = true;
-  console.log("isDarkMode:", isDarkMode);
+  const [isDarkMode, setIsDarkMode] = useDarkMode();
 
   return (
     <header>
@@ -37,7 +37,7 @@ const Header = (props: Props) => {
               className="toggle_btn"
               data-testid="toggle_btn"
               onClick={() => {
-                // setDarkMode(!isDarkMode);
+                setIsDarkMode(!isDarkMode);
               }}
             >
               {isDarkMode ? (

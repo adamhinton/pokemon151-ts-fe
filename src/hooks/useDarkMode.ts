@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 const useDarkMode = () => {
   const key = "isDarkMode";
-  const [isDark, setIsDark] = useState(() => {
+  const [isDarkMode, setIsDarkMode] = useState(() => {
     try {
       const item = window.localStorage.getItem(key);
       return item ? JSON.parse(item) : undefined;
@@ -15,28 +15,15 @@ const useDarkMode = () => {
   });
 
   useEffect(() => {
-    const className = "dark";
-    const pokeCards = window.document.querySelectorAll(".pokemon-card");
-
-    //This adds or removes .dark class to both body and each individual pokemon cards
-    if (isDark) {
-      window.document.body.classList.add(className);
-      pokeCards.forEach((item) => {
-        item.classList.add(className);
-      });
-    } else {
-      window.document.body.classList.remove(className);
-      pokeCards.forEach((item) => {
-        item.classList.remove(className);
-      });
-    }
     try {
-      window.localStorage.setItem(key, isDark);
+      window.localStorage.setItem(key, isDarkMode);
     } catch (e) {
       console.error("Error in setting preference");
     }
   });
-  return [isDark, setIsDark];
+
+  console.log("isDarkMode:", isDarkMode);
+  return [isDarkMode, setIsDarkMode];
 };
 
 export default useDarkMode;
