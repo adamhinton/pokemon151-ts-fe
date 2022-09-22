@@ -10,8 +10,6 @@ const App = (): ReactElement => {
   const [isShiny, setIsShiny] = useState(false);
   const [isDarkMode] = useDarkMode();
 
-  console.log("app isDarkMode:", isDarkMode);
-
   return (
     <div className="App">
       <GlobalStyle />
