@@ -18,6 +18,10 @@ const Header = (props: Props) => {
   //   const { changeDisplay, isShiny, setIsShiny } = props;
   const { isShiny, setIsShiny } = props;
 
+  // this is dummy data and we'll make this smart a bit later
+  let isDarkMode = true;
+  console.log("isDarkMode:", isDarkMode);
+
   return (
     <header>
       <h1 className="header-item header-h1">Pokemon 151 Project</h1>
@@ -29,7 +33,7 @@ const Header = (props: Props) => {
             <div className="logo" data-testid="logo">
               {/* {isDarkMode ? "Dark Mode" : "Light Mode"} */}
             </div>
-            {/* <button
+            <button
               className="toggle_btn"
               data-testid="toggle_btn"
               onClick={() => {
@@ -41,7 +45,7 @@ const Header = (props: Props) => {
               ) : (
                 <BsMoon size="24" title="Switch to dark mode" />
               )}
-            </button> */}
+            </button>
           </div>
 
           {/* This is the styled big green line running through the header */}
