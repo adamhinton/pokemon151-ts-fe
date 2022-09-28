@@ -1,8 +1,8 @@
 import { Link } from "./linksArray";
 
 const linkMaker = (linksArray: Link[]): JSX.Element[] => {
-  return linksArray.map((item) => {
-    const { href, text } = item;
+  return linksArray.map((link) => {
+    const { href, text } = link;
     return (
       <a target="_blank" rel="noreferrer" href={href} key={text}>
         {text}
