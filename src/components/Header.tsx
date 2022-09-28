@@ -2,6 +2,8 @@ import React from "react";
 //darkmode toggle icons
 import { BsMoon, BsSun } from "react-icons/bs";
 import useDarkMode from "../hooks/useDarkMode";
+import linkMaker from "../utils/HeaderUtils/linkMaker";
+import linksArray from "../utils/HeaderUtils/linksArray";
 
 // TODO:
 // - Dropdown
