@@ -19,7 +19,6 @@ const Header = (props: Props) => {
   //   const { changeDisplay, isShiny, setIsShiny } = props;
   const { isShiny, setIsShiny } = props;
 
-  // this is dummy data and we'll make this smart a bit later
   const [isDarkMode, setIsDarkMode] = useDarkMode();
 
   return (
