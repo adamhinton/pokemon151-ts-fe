@@ -73,7 +73,7 @@ const Header = (props: Props) => {
         <h2>Author: Adam Hinton</h2>
 
         {/* the linkMaker function produces header links. Update linksArray (imported above) to add/change/remove links*/}
-        {/* <nav className="header-nav">{linkMaker(linksArray)}</nav> */}
+        <nav className="header-nav">{linkMaker(linksArray)}</nav>
       </section>
     </header>
   );
