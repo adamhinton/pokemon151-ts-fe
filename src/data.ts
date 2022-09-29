@@ -8,7 +8,7 @@ export type Pokemon = {
   dexEntry: string;
 };
 
-export type PokemonData = Pokemon[];
+export type PokemonData = readonly Pokemon[];
 
 export const pokemonData: PokemonData = [
   {
