@@ -33,9 +33,7 @@ const Header = (props: Props) => {
         <DarkModeShinySection>
           {/* I don't think darkmode-section is used in original styled. TODO: Delete */}
           <div className="darkmode-section">
-            <div className="logo" data-testid="logo">
-              {isDarkMode ? "Dark Mode" : "Light Mode"}
-            </div>
+            <Logo>{isDarkMode ? "Dark Mode" : "Light Mode"}</Logo>
             <button
               className="toggle_btn"
               data-testid="toggle_btn"
@@ -119,4 +117,10 @@ const DarkModeShinySection = styled.menu`
   padding: 3%;
   margin: 0;
   width: 90%;
+`;
+
+const Logo = styled.div`
+  /* Darkmode toggle logo */
+  font-size: 1.2rem;
+  font-weight: 600;
 `;
