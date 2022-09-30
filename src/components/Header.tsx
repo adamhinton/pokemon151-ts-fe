@@ -34,7 +34,7 @@ const Header = (props: Props) => {
           {/* I don't think darkmode-section is used in original styled. TODO: Delete */}
           <div className="darkmode-section">
             <div className="logo" data-testid="logo">
-              {/* {isDarkMode ? "Dark Mode" : "Light Mode"} */}
+              {isDarkMode ? "Dark Mode" : "Light Mode"}
             </div>
             <button
               className="toggle_btn"
