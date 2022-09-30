@@ -34,9 +34,8 @@ const Header = (props: Props) => {
           {/* I don't think darkmode-section is used in original styled. TODO: Delete */}
           <div className="darkmode-section">
             <Logo>{isDarkMode ? "Dark Mode" : "Light Mode"}</Logo>
-            <button
+            <DarkModeToggleButton
               className="toggle_btn"
-              data-testid="toggle_btn"
               onClick={() => {
                 setIsDarkMode(!isDarkMode);
               }}
@@ -46,7 +45,7 @@ const Header = (props: Props) => {
               ) : (
                 <BsMoon size="24" title="Switch to dark mode" />
               )}
-            </button>
+            </DarkModeToggleButton>
           </div>
 
           {/* This is the styled big green line running through the header */}
@@ -123,4 +122,13 @@ const Logo = styled.div`
   /* Darkmode toggle logo */
   font-size: 1.2rem;
   font-weight: 600;
+`;
+
+/* The darkmode toggle button */
+const DarkModeToggleButton = styled.button`
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  cursor: pointer;
+  border: none;
+  border-radius: 20%;
 `;
