@@ -97,6 +97,10 @@ const HeaderItem = styled.div`
   color: blue;
   width: 30%;
   padding: 3%;
+
+  @media screen and (max-width: 860px) {
+    width: 100%;
+  }
 `;
 
 const H1 = styled(HeaderItem as "h1")`
