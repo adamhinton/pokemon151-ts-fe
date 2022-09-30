@@ -35,7 +35,6 @@ const Header = (props: Props) => {
           <div className="darkmode-section">
             <Logo>{isDarkMode ? "Dark Mode" : "Light Mode"}</Logo>
             <DarkModeToggleButton
-              className="toggle_btn"
               onClick={() => {
                 setIsDarkMode(!isDarkMode);
               }}

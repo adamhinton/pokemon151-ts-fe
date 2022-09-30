@@ -7,27 +7,27 @@ exports[`[3] Matches snapshot from 9.18.22 1`] = `
   <header
     className="sc-bczRLJ bcqcqj"
   >
-    <h1
-      className="header-item header-h1"
+    <div
+      className="sc-gsnTZi sc-dkzDqf evrFYl isByeF"
     >
       Pokemon 151 Project
-    </h1>
+    </div>
     <section
-      className="darkmode-shiny-dropdown"
+      className="sc-hKMtZM cuNgHa"
     >
       <menu
-        className="darkmode-shiny-section"
+        className="sc-eCYdqJ cbVocn"
       >
         <div
           className="darkmode-section"
         >
           <div
-            className="logo"
-            data-testid="logo"
-          />
+            className="sc-jSMfEi dujHkp"
+          >
+            Light Mode
+          </div>
           <button
-            className="toggle_btn"
-            data-testid="toggle_btn"
+            className="sc-gKXOVf inWYgR"
             onClick={[Function]}
           >
             <svg
