@@ -72,6 +72,38 @@ exports[`[3] Matches snapshot from 9.18.22 1`] = `
       <h2>
         Author: Adam Hinton
       </h2>
+      <nav
+        className="header-nav"
+      >
+        <a
+          href="https://github.com/adamhinton/pokemon151-ts-fe"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Source
+        </a>
+        <a
+          href="https://bulbapedia.bulbagarden.net/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Bulbapedia
+        </a>
+        <a
+          href="https://pokeapi.co/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          PokeAPI
+        </a>
+        <a
+          href="https://bulbapedia.bulbagarden.net/wiki/Shiny_Pok%C3%A9mon"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Shinies
+        </a>
+      </nav>
     </section>
   </header>
   <h1>
