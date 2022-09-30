@@ -5,10 +5,10 @@ exports[`[3] Matches snapshot from 9.18.22 1`] = `
   className="App"
 >
   <header
-    className="sc-bczRLJ bcqcqj"
+    className="sc-bczRLJ chmisi"
   >
     <div
-      className="sc-gsnTZi sc-dkzDqf evrFYl isByeF"
+      className="sc-gsnTZi sc-dkzDqf khjaih isByeF"
     >
       Pokemon 151 Project
     </div>
@@ -54,7 +54,7 @@ exports[`[3] Matches snapshot from 9.18.22 1`] = `
           </button>
         </div>
         <div
-          className="vertical-line"
+          className="sc-iBkjds jUoFms"
         />
         <div
           className="shiny-button-div"
