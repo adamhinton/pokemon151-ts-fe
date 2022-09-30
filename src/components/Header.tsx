@@ -48,7 +48,7 @@ const Header = (props: Props) => {
           </div>
 
           {/* This is the styled big green line running through the header */}
-          <div className="vertical-line" />
+          <VerticalLine />
 
           {/* This button toggles whether the app shows the Shiny forms of the pokemon */}
           <div className="shiny-button-div">
@@ -87,6 +87,11 @@ const StyledHeader = styled.header`
   align-items: flex-end;
   padding-left: 5%;
   padding-right: 5%;
+
+  @media screen and (max-width: 860px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 const HeaderItem = styled.div`
   color: blue;
@@ -130,4 +135,9 @@ const DarkModeToggleButton = styled.button`
   cursor: pointer;
   border: none;
   border-radius: 20%;
+`;
+
+const VerticalLine = styled.div`
+  border-left: 6px solid green;
+  margin: 0% 2%;
 `;
