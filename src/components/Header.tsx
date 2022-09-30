@@ -26,7 +26,7 @@ const Header = (props: Props) => {
 
   return (
     <StyledHeader>
-      <H1 className="header-item header-h1">Pokemon 151 Project</H1>
+      <H1>Pokemon 151 Project</H1>
 
       {/* Begin display options dropdown. See Dropdown.js */}
       <section className="darkmode-shiny-dropdown">
