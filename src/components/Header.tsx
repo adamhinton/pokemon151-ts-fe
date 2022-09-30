@@ -93,6 +93,8 @@ const StyledHeader = styled.header`
 `;
 const HeaderItem = styled.div`
   color: blue;
+  width: 30%;
+  padding: 3%;
 `;
 
 const H1 = styled(HeaderItem as "h1")`
