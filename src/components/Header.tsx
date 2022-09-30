@@ -30,7 +30,8 @@ const Header = (props: Props) => {
 
       {/* Begin display options dropdown. See Dropdown.js */}
       <DarkModeShinyDropdown>
-        <menu className="darkmode-shiny-section">
+        <DarkModeShinySection>
+          {/* I don't think darkmode-section is used in original styled. TODO: Delete */}
           <div className="darkmode-section">
             <div className="logo" data-testid="logo">
               {/* {isDarkMode ? "Dark Mode" : "Light Mode"} */}
@@ -64,7 +65,7 @@ const Header = (props: Props) => {
               {isShiny ? "Show Non-Shiny Forms" : "Show Shiny Forms"}
             </button>
           </div>
-        </menu>
+        </DarkModeShinySection>
 
         {/* The dropdown section lives here */}
         {/* <Dropdown changeDisplay={changeDisplay} /> */}
@@ -110,4 +111,12 @@ const DarkModeShinyDropdown = styled.section`
   align-items: center;
   justify-content: center;
   width: 80%;
+`;
+
+const DarkModeShinySection = styled.menu`
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+  margin: 0;
+  width: 90%;
 `;
