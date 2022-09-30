@@ -1,6 +1,7 @@
 import React from "react";
 //darkmode toggle icons
 import { BsMoon, BsSun } from "react-icons/bs";
+import styled from "styled-components";
 import useDarkMode from "../hooks/useDarkMode";
 import linkMaker from "../utils/HeaderUtils/linkMaker";
 import linksArray from "../utils/HeaderUtils/linksArray";
@@ -24,8 +25,8 @@ const Header = (props: Props) => {
   const [isDarkMode, setIsDarkMode] = useDarkMode();
 
   return (
-    <header>
-      <h1 className="header-item header-h1">Pokemon 151 Project</h1>
+    <StyledHeader>
+      <H1 className="header-item header-h1">Pokemon 151 Project</H1>
 
       {/* Begin display options dropdown. See Dropdown.js */}
       <section className="darkmode-shiny-dropdown">
@@ -75,8 +76,28 @@ const Header = (props: Props) => {
         {/* the linkMaker function produces header links. Update linksArray (imported above) to add/change/remove links*/}
         <nav className="header-nav">{linkMaker(linksArray)}</nav>
       </section>
-    </header>
+    </StyledHeader>
   );
 };
 
 export default Header;
+
+const StyledHeader = styled.header`
+  background-color: rgb(46, 37, 37);
+  color: rgb(221, 203, 203);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-left: 5%;
+  padding-right: 5%;
+`;
+const HeaderItem = styled.div`
+  color: blue;
+`;
+
+const H1 = styled(HeaderItem as "h1")`
+  margin-top: 0;
+  font-size: 2.25rem;
+  margin-bottom: 2%;
+  padding: 0;
+`;
