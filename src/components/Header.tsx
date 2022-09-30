@@ -29,7 +29,7 @@ const Header = (props: Props) => {
       <H1>Pokemon 151 Project</H1>
 
       {/* Begin display options dropdown. See Dropdown.js */}
-      <section className="darkmode-shiny-dropdown">
+      <DarkModeShinyDropdown>
         <menu className="darkmode-shiny-section">
           <div className="darkmode-section">
             <div className="logo" data-testid="logo">
@@ -68,7 +68,7 @@ const Header = (props: Props) => {
 
         {/* The dropdown section lives here */}
         {/* <Dropdown changeDisplay={changeDisplay} /> */}
-      </section>
+      </DarkModeShinyDropdown>
 
       <section className="adam-info header-item">
         <h2>Author: Adam Hinton</h2>
@@ -102,4 +102,12 @@ const H1 = styled(HeaderItem as "h1")`
   font-size: 2.25rem;
   margin-bottom: 2%;
   padding: 0;
+`;
+
+const DarkModeShinyDropdown = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
 `;
